@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("./partials/head",{"css":["header","register", "footer"]})%> 
+<body>
+    <%- include("./partials/header")%> 
+    <section id="register">
+        <h2>REGISTRATE</h2>
+        <form action="">
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Juan Tomás" name="name" id="name">
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Vega Pérez" name="apellido" id="apellido">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="juantvegap@example.com" name="email" id="email">
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" placeholder="" name="date" id="date">
+            <label for="tel">Teléfono</label>
+            <input type="tel" placeholder="3518923485" name="tel" id="tel">
+            <label for="password">Contraseña</label>
+            <input type="password" placeholder="Ingrese una contraseña..." name="password" id="password">
+            <label for="confirmpassword">Confirmar contraseña</label>
+            <input type="password" placeholder="Confirme su contraseña..." name="password" id="confirmpassword">
+            <button type="submit">CREAR CUENTA</button>
+        </form>
+    </section>
+
+    <%- include("./partials/footer")%>
+
+</body>
+</html>

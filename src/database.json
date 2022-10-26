@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nameprod": "SET DE CUBREBUTACAS UNIVERSAL",
+        "descrip": "8 butacas: 2 butacas delanteras + 1 asiento trasero + 1 respaldo trasero + 4 apoyacabezas",
+        "price": "$5999,99"
+    },
+    {
+        "id": 1,
+        "nameprod": "KIT DE BUJÍAS NGK",
+        "descrip": "Juego de bujías NGK por 4 unidades. Para motor 1.4 y 1.6. NAFTA",
+        "price": "$5500"
+    },
+    {
+        "id": 1,
+        "nameprod": "KIT DE FAROS AUXILIARES - VIC",
+        "descrip": "Kit de faros auxiliares universal VIC, línea Pilot de largo alcance listo para instalar.",
+        "price": "$15000"
+    },
+    {
+        "id": 1,
+        "nameprod": "KIT DISCOS Y PASTILLAS DE FRENO",
+        "descrip": "2 discos + 1 juego de pastillas de freno. Diametro 250mm. Para Chevrolet ONIX/PRISMA",
+        "price": "$16500"
+    },
+    {
+        "id": 1,
+        "nameprod": "CUBREVOLANTE UNIVERSAL",
+        "descrip": "Cubrevolante universal de color negro, de cuerina. Diametro 40cm. Costura reforzada.",
+        "price": "$1450"
+    }
+]

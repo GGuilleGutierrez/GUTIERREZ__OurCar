@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+
+* {
+    font-family: 'Alumni Sans', sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    margin: 0%;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    background-color: #59ccbba2;
+}
+
+button:hover {
+    background-color: #59CCBA;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.logo {
+    height: 60px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #59CCBA;
+}
+
+.search {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 50%;
+}
+
+.search input {
+    border: none;
+    height: 100%;
+    width: 70%;
+    outline: none;
+    margin-left: 10px;
+}
+
+.lupa {
+    margin-left: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #797979;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 60px;
+    width: 100px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgprod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgprod svg {
+    margin: 0px 10px;
+}
+
+.imgprod img {
+    height: 35vh;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.descrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.descrip ul p {
+    font-size: 20px;
+}
+
+.stockyadd {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stockyadd p {
+    font-size: 25px;
+}
+
+.stockyadd button {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 20%;
+}
+
+#relacionados h4 {
+    background-color: #797979;
+    margin: 0px;
+    padding: 5px 30px;
+}
+
+#relacionados .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#relacionados .container div button {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#relacionados .container div img {
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #797979;
+}
+
+.logofoot {
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.help {
+    display: flex;
+    margin-top: 10px;
+}
+
+.help div {
+    margin: 0px 20px;
+}
+
+.help a {
+    font-size: 20px
+}
+
+.redes {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.redes a {
+    margin: 0px 5px;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    background-color: #797979;
+}
+
+#copyright p {
+    margin-top: 5px;
+}
+
+@media (min-width:768px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .search {
+        height: 50px;
+        width: 40%;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    header nav a {
+        padding: 0px 10px;
+    }
+
+    #main .container {
+        padding-top: 80px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .price {
+        margin-bottom: 20px;
+    }
+
+    #relacionados h4 {
+        font-size: 17px;
+        padding: 10px 30px
+    }
+
+    #relacionados .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .logofoot {
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    .help {
+        flex-direction: column;
+    }
+
+    .help div {
+        margin: 10px 0px;
+    }
+
+    #copyright {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

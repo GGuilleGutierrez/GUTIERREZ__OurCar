@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head",{"css":["header","home", "footer"]})%> 
+
+
+<body>
+    <%- include("./partials/header")%> 
+
+<section id="hero">
+    <div class="container">
+        <div class="nos">
+            <h2>NOSOTROS</h2>
+            <p>Somos una empresa familiar que se dedica hace años a la comercialización y distribución de tanto
+                repuestos como accesorios para automóviles. Buscamos lograr que el cliente se haga de las mejores
+                opciones del mercado para una experiencia satisfactoria a la hora de reparar o adornar su vehículo.
+                Nuestros empleados están completamente capacitados y son sumamentes idóneos para asesorar y
+                recomendar a quien lo necesite.
+                Trabajamos con las mejores marcas.</p>
+            <img class="marcas" src="./img/marcas-repuestos.jpg" alt="Marcas">
+        </div>
+        <div class="repyacc">
+            <div class="repuestos">
+                <button>REPUESTOS</button>
+            </div>
+            <div class="accesorios">
+                <button>ACCESORIOS</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="masbusc">
+    <div class="lomasbusc">
+        <p>LO MÁS BUSCADO</p>
+    </div>
+    <div class="prods">
+        <div>
+            <img src="./img/prod1.jpg" alt="producto">
+            <a href="/detailproduct"><button>VER MÁS</button></a>
+        </div>
+        <div>
+            <img src="./img/prod2.jpg" alt="producto">
+            <a href=""><button>VER MÁS</button></a>
+        </div>
+        <div>
+            <img src="./img/prod3.jpg" alt="producto">
+            <a href=""><button>VER MÁS</button></a>
+        </div>
+        <div>
+            <img src="./img/prod4.jpg" alt="producto">
+            <a href=""><button>VER MÁS</button></a>
+        </div>
+    </div>
+</section>
+
+<%- include("./partials/footer")%> 
+
+</body>

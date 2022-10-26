@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+
+* {
+    font-family: 'Alumni Sans', sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    margin: 0%;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    background-color: #59ccbba2;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #59CCBA;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.logo {
+    height: 60px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #59CCBA;
+}
+
+.search {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 50%;
+}
+
+.search input {
+    border: none;
+    height: 100%;
+    width: 70%;
+    outline: none;
+    margin-left: 10px;
+}
+
+.lupa {
+    margin-left: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.prod {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    margin: 0px 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prod img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 10px;
+}
+
+.contprod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30vh;
+}
+
+.contprod div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vh;
+}
+
+.price {
+    background-color: #797979;
+    height: 10%;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#resumcompra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+#resumcompra div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+.total {
+    background-color: #88ccc29a;
+    font-size: 20px;
+}
+
+.boton {
+    padding: 20px 0px;
+    font-size: 10px
+}
+
+.seguircomp {
+    background-color: #D9D9D9;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #797979;
+}
+
+.logofoot {
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.help {
+    display: flex;
+    margin-top: 10px;
+}
+
+.help div {
+    margin: 0px 20px;
+}
+
+.help a {
+    font-size: 20px
+}
+
+.redes {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.redes a {
+    margin: 0px 5px;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    background-color: #797979;
+}
+
+#copyright p {
+    margin-top: 5px;
+}
+
+@media (min-width:768px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .search {
+        height: 50px;
+        width: 40%;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    header nav a {
+        padding: 0px 10px;
+    }
+
+    .mainyresum {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #main {
+        width: 50%;
+        padding-top: 80px;
+    }
+
+    #resumcompra {
+        width: 50%;
+    }
+
+    #resumcompra {
+        padding-top: 150px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .logofoot {
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    .help {
+        flex-direction: column;
+    }
+
+    .help div {
+        margin: 10px 0px;
+    }
+
+    #copyright {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

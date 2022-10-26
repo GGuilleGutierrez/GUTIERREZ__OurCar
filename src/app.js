@@ -1,25 +1,17 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
+app.listen(PORT, () => console.log('escuchando en el puerto 3000'));
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views')
+app.use(express.static('public'));
 
-app.listen(PORT, () => console.log("escuchando en el puerto 3000"));
+app.use(require('./routes/home'))
 
-app.get('/', (req, res) => {
-    res.send("estoy en HOME")
-})
+app.use(require('./routes/detailproduct'))
 
-app.get('/detailproduct', (req, res) => {
-    res.send("estoy en DETAIL--PRODUCT")
-})
+app.use(require('./routes/login'))
 
-app.get('/login', (req, res) => {
-    res.send("estoy en LOGIN")
-})
+app.use(require('./routes/register'))
 
-app.get('/register', (req, res) => {
-    res.send("estoy en REGISTER")
-})
-
-app.get('/cart', (req, res) => {
-    res.send("estoy en CART")
-})
+app.use(require('./routes/cart'))
